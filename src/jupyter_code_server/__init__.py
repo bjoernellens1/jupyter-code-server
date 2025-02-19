@@ -78,10 +78,8 @@ def setup_code_server():
 
     command_arguments = [
         '--socket={unix_socket}',
-        '--auth=password',
+        '--auth=none',
         '--disable-update-check',
-        '--disable-file-uploads',
-        '--disable-file-downloads',
         '--ignore-last-opened'  # needed to set a specific working directory
     ]
 
